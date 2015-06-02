@@ -7,13 +7,10 @@
 
 /*
 Copyright 2008-2013 Concur Technologies, Inc.
-
 Licensed under the Apache License, Version 2.0 (the "License"); you may
 not use this file except in compliance with the License. You may obtain
 a copy of the License at
-
   http://www.apache.org/licenses/LICENSE-2.0
-
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
 WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
@@ -48,23 +45,23 @@ html, body {
   width: 20px;
 }
 
-@mixin embossed-bg {
-  @include background(
-    linear-gradient(top,
-                    rgba(#000, 0.2),
-                    rgba(#000, 0) 8px),
-    linear-gradient(bottom,
-                    rgba(#000, 0.2),
-                    rgba(#000, 0) 8px),
-    linear-gradient(top,
-                    rgba($nav-embossed-border-top, 1),
-                    rgba($nav-embossed-border-top, 0) 1.5px),
-    linear-gradient(bottom,
-                    rgba($nav-embossed-border-bottom, 1),
-                    rgba($nav-embossed-border-bottom, 0) 1.5px),
-    $nav-subitem-bg
-  );
-}
+// @mixin embossed-bg {
+//   @include background(
+//     linear-gradient(top,
+//                     rgba(#000, 0.2),
+//                     rgba(#000, 0) 8px),
+//     linear-gradient(bottom,
+//                     rgba(#000, 0.2),
+//                     rgba(#000, 0) 8px),
+//     linear-gradient(top,
+//                     rgba($nav-embossed-border-top, 1),
+//                     rgba($nav-embossed-border-top, 0) 1.5px),
+//     linear-gradient(bottom,
+//                     rgba($nav-embossed-border-bottom, 1),
+//                     rgba($nav-embossed-border-bottom, 0) 1.5px),
+//     $nav-subitem-bg
+//   );
+// }
 
 .tocify-wrapper {
   @include transition(left ease-in-out 0.3s);
@@ -79,6 +76,7 @@ html, body {
   background-color: $nav-bg;
   font-size: 13px;
   font-weight: bold;
+  border-right: 1px solid #ccc;
 
   // language selector for mobile devices
   .lang-selector {
@@ -92,6 +90,11 @@ html, body {
   // This is the logo at the top of the ToC
   &>img {
     display: block;
+    width: 200px;
+    height: 60px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &>.search {
@@ -100,7 +103,7 @@ html, body {
     input {
       background: $nav-bg;
       border-width: 0 0 1px 0;
-      border-color: $search-box-border-color;
+      //border-color: $search-box-border-color;
       padding: 6px 0 6px 20px;
       @include box-sizing(border-box);
       margin: $nav-v-padding $nav-padding;
@@ -137,7 +140,7 @@ html, body {
       margin-bottom: 1em;
     }
 
-    @include embossed-bg;
+    //@include embossed-bg;
 
     li {
       margin: 1em $nav-padding;
@@ -182,8 +185,9 @@ html, body {
 
   // This is the currently selected ToC entry
   .tocify-focus {
-    @include box-shadow(0px 1px 0px $nav-active-shadow);
-    background-color: $nav-active-bg;
+    //@include box-shadow(0px 1px 0px $nav-active-shadow);
+    //background-color: $nav-active-bg;
+    border-left: 5px solid #4e4eff;
     color: $nav-active-text;
   }
 
@@ -199,7 +203,7 @@ html, body {
     }
 
     // for embossed look:
-    @include embossed-bg;
+    //@include embossed-bg;
     &>li:last-child {
       box-shadow: none; // otherwise it'll overflow out of the subheader
     }
@@ -208,7 +212,6 @@ html, body {
   .toc-footer {
     padding: 1em 0;
     margin-top: 1em;
-    border-top: 1px dashed $nav-footer-border-color;
 
     li,a {
       color: $nav-text;
@@ -349,6 +352,7 @@ html, body {
     @include box-sizing(border-box);
     display: block;
     @include text-shadow($main-embossed-text-shadow);
+    width: 100%;
 
     @extend %left-col;
   }
@@ -367,13 +371,13 @@ html, body {
     font-size: 30px;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    border-bottom: 1px solid #ccc;
+    //border-bottom: 1px solid #ccc;
     margin-bottom: $h1-margin-bottom;
     margin-top: 2em;
     border-top: 1px solid #ddd;
-    @include background-image(
-      linear-gradient(top, #fff, #f9f9f9)
-    );
+    //@include background-image(
+      //linear-gradient(top, #fff, #f9f9f9)
+    //);
   }
 
   h1:first-child, div:first-child + h1 {
@@ -436,6 +440,7 @@ html, body {
 
     td {
       padding: 10px;
+      border: 1px solid #ccc;
     }
 
     tr:last-child {

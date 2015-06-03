@@ -1,5 +1,5 @@
 ---
-title: Qora Wiki
+title: Qora Manual
 
 
 toc_footers:
@@ -11,30 +11,14 @@ search: true
 
 # Introduction
 
-Qora is a second generation peer to peer cryptocurrency aims to solve Bitcoin's biggest problems.
 
 # About Qora
 
-Qora has been reilied on an IPO
 
 ## Features
 
-- Ed25519 DSA to verify and sign messages.
-- 1-5 minute block time depending on the network activity.
-- Retargeting every 10 blocks.
-- Deterministic and Password protected wallets that can be recovered/generated from seeds.
-- New Proof-of-Stake algorithm.
-- A REST API to directly communicate with the client.
-- Naming Service: allows the user to register a key-value pair which can be used for various purposes (URLS, addresses, …).
-- This Naming Service will also include an exchange where users can buy and sell keys.
-- Voting System: Allows voting inside the client to make community decisions such as which feature will be implemented next.
-- Arbitrary Transactions: a simple feature which allows users to send any payload they want over the network.
-- This can be used by third-parties to build additional features on top of Qora (chat, ...).
-- Assets: assets with asset/asset trading pairs.
-
 ## Source Code
 
-Source code has been first published on 09 of December, 2014 at version 18.Full source code has been published on Mar 14, 2015.
 
 ## External Resources
 
@@ -98,11 +82,15 @@ Source code has been first published on 09 of December, 2014 at version 18.Full 
 
 ## Recover wallet from seed
 
+## Retrieve wallet's seed
+
 ## Create account
 
 ## Delete account
 
 ## Import account from seed
+
+## Retrieve account's seed
 
 # Payments
 
@@ -144,6 +132,12 @@ Source code has been first published on 09 of December, 2014 at version 18.Full 
 
 # Assets
 
+# View Asset details
+
+# Add to Favorites
+
+# Open Pair
+
 ## Buy asset
 
 ## Sell asset
@@ -178,6 +172,7 @@ Below you will see an example command.
 
 
 Returns the transaction in JSON when successful.
+
 If you have encountered an error while making the arbitrary transaction, console will display the error code.
 Below is the errors list.
 
@@ -209,10 +204,6 @@ Enter the values accordingly on each field and click deploy.
 ## Initiate ACCT
 
 ## Response ACCT
-
-# Services
-
-## Exchanges
 
 # Tools
 

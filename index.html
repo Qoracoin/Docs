@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Qora Wiki</title>
+    <title>Qora Manual</title>
 
     <link href="stylesheets/screen.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="stylesheets/print.css" rel="stylesheet" type="text/css" media="print" />
@@ -36,32 +36,11 @@
       <div class="content">
         <h1 id="introduction">Introduction</h1>
 
-<p>Qora is a second generation peer to peer cryptocurrency aims to solve Bitcoin&rsquo;s biggest problems.</p>
-
 <h1 id="about-qora">About Qora</h1>
-
-<p>Qora has been reilied on an IPO</p>
 
 <h2 id="features">Features</h2>
 
-<ul>
-<li>Ed25519 DSA to verify and sign messages.</li>
-<li>1-5 minute block time depending on the network activity.</li>
-<li>Retargeting every 10 blocks.</li>
-<li>Deterministic and Password protected wallets that can be recovered/generated from seeds.</li>
-<li>New Proof-of-Stake algorithm.</li>
-<li>A REST API to directly communicate with the client.</li>
-<li>Naming Service: allows the user to register a key-value pair which can be used for various purposes (URLS, addresses, …).</li>
-<li>This Naming Service will also include an exchange where users can buy and sell keys.</li>
-<li>Voting System: Allows voting inside the client to make community decisions such as which feature will be implemented next.</li>
-<li>Arbitrary Transactions: a simple feature which allows users to send any payload they want over the network.</li>
-<li>This can be used by third-parties to build additional features on top of Qora (chat, &hellip;).</li>
-<li>Assets: assets with asset/asset trading pairs.</li>
-</ul>
-
 <h2 id="source-code">Source Code</h2>
-
-<p>Source code has been first published on 09 of December, 2014 at version 18.Full source code has been published on Mar 14, 2015.</p>
 
 <h2 id="external-resources">External Resources</h2>
 
@@ -130,11 +109,15 @@
 
 <h2 id="recover-wallet-from-seed">Recover wallet from seed</h2>
 
+<h2 id="retrieve-wallet&#39;s-seed">Retrieve wallet&rsquo;s seed</h2>
+
 <h2 id="create-account">Create account</h2>
 
 <h2 id="delete-account">Delete account</h2>
 
 <h2 id="import-account-from-seed">Import account from seed</h2>
+
+<h2 id="retrieve-account&#39;s-seed">Retrieve account&rsquo;s seed</h2>
 
 <h1 id="payments">Payments</h1>
 
@@ -176,6 +159,12 @@
 
 <h1 id="assets">Assets</h1>
 
+<h1 id="view-asset-details">View Asset details</h1>
+
+<h1 id="add-to-favorites">Add to Favorites</h1>
+
+<h1 id="open-pair">Open Pair</h1>
+
 <h2 id="buy-asset">Buy asset</h2>
 
 <h2 id="sell-asset">Sell asset</h2>
@@ -210,8 +199,9 @@ Currently arbitrary transactions can only be made through the API.
 <p>POST arbitrarytransacions {&ldquo;creator&rdquo;: &ldquo;QNbA69dbnmwqJHLQeS9v63hSLZXXGkmtC6&rdquo;,&ldquo;data&rdquo;:&ldquo;4GFHMAo9fmbUq7usopgntwUfAiLtpL98K6QCosAJsqQmY95tfd5KoUaKu34v6Qwp7RtYEhobCx7LVi7aYbbtpzfA&rdquo;,&ldquo;service&rdquo;: 555,&ldquo;fee&rdquo;: &ldquo;1.00001&rdquo;}</p>
 </blockquote>
 
-<p>Returns the transaction in JSON when successful.
-If you have encountered an error while making the arbitrary transaction, console will display the error code.
+<p>Returns the transaction in JSON when successful.</p>
+
+<p>If you have encountered an error while making the arbitrary transaction, console will display the error code.
 Below is the errors list.</p>
 
 <h3 id="errors">ERRORS</h3>
@@ -277,10 +267,6 @@ Below is the errors list.</p>
 <h2 id="initiate-acct">Initiate ACCT</h2>
 
 <h2 id="response-acct">Response ACCT</h2>
-
-<h1 id="services">Services</h1>
-
-<h2 id="exchanges">Exchanges</h2>
 
 <h1 id="tools">Tools</h1>
 
@@ -450,7 +436,7 @@ You will have to <a href="#start-the-wallet-from-the-eclipse's-workspace">run th
 
 <p>Here are some frequently asked questions that might help you</p>
 
-Known Issues</h2>
+<h2 id="known-issues">Known Issues</h2>
 
 <p>Below are listed the latest know bugs</p>
 

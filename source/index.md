@@ -150,7 +150,11 @@ Source code has been first published on 09 of December, 2014 at version 18.Full 
 
 ## Place a buy order
 
+## Cancel a buy order
+
 ## Place a sell order
+
+## Cancel a sell order
 
 ## Issue asset
 
@@ -159,6 +163,38 @@ Source code has been first published on 09 of December, 2014 at version 18.Full 
 ## Send multi payment
 
 # Arbitrary Transactions
+
+The data of the arbitrary transaction must be base58 encoded and must be between 1-4000 bytes.
+
+<aside class="notice">
+Currently arbitrary transactions can only be made through the API.
+</aside>
+
+To create an arbitrary transaction, open the console and then send your Command.
+
+Below you will see an example command.
+
+> POST arbitrarytransacions {"creator": "QNbA69dbnmwqJHLQeS9v63hSLZXXGkmtC6","data":"4GFHMAo9fmbUq7usopgntwUfAiLtpL98K6QCosAJsqQmY95tfd5KoUaKu34v6Qwp7RtYEhobCx7LVi7aYbbtpzfA","service": 555,"fee": "1.00001"}
+
+
+Returns the transaction in JSON when successful.
+If you have encountered an error while making the arbitrary transaction, console will display the error code.
+Below is the errors list.
+
+### ERRORS
+
+| Error |	Description |
+|------ | ----------- |
+| 1 |	Json error. |
+| 2 |	Not enough balance. |
+| 3 |	Not yet released. |
+| 102 |	Invalid address. |
+| 105 |	Invalid fee. |
+| 115 |	Invalid data. |
+| 116 |	Invalid data length. |
+| 201 |	Wallet does not exist. |
+| 202 |	Address does not exist in wallet. |
+| 203 |	Wallet is locked. |
 
 # Automated Transactions
 

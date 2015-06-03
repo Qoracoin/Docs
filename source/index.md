@@ -241,6 +241,8 @@ The data of the arbitrary transaction must be base58 encoded and must be between
 Currently arbitrary transactions can only be made through the API.
 </aside>
 
+## Send arbitrary transaction
+
 To create an arbitrary transaction, open the console and then send your Command.
 
 Below you will see an example command.
@@ -268,6 +270,16 @@ Below is the errors list.
 | 201 |	Wallet does not exist. |
 | 202 |	Address does not exist in wallet. |
 | 203 |	Wallet is locked. |
+
+## Load arbitrary transaction
+
+To load an arbitrary transaction, open the console and then send your Command.
+
+Below you will see an example command.
+
+> POST transactions/scan {"type":10,"creator":"QNbA69dbnmwqJHLQeS9v63hSLZXXGkmtC6"}  
+
+Returns all the arbitrary transactions made by the given creator.  
 
 # Automated Transactions
 

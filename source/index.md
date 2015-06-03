@@ -84,6 +84,8 @@ search: true
 
 ## Retrieve wallet's seed
 
+# Accounts
+
 ## Create account
 
 ## Delete account

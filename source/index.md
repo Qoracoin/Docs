@@ -38,28 +38,13 @@ Source code has been first published on 09 of December, 2014 at version 18.Full 
 
 ## External Resources
 
+
 # Getting Started
 
 - [Download the client](#downloads)
 - Create a Wallet
 - Learn the application
 - Get some Qora
-
-# How To
-
-Here you can find a quick How-To list
-
-- [How to install](#installation)
-- [How to create a wallet](#create-a-wallet)
-- [How to send payment](#send-payment)
-- [How to send message](#send-message)
-- [How to register a name](#register-a-name)
-- [How to vote](#vote)
-- [How to buy an asset](#buy-asset)
-- [How to sell an asset](#sell-asset)
-- [How to issue an asset](#issue-asset)
-- [How to deploy an AT](#deploy-at)
-- [How to make an Atomic Cross-Chain transfer](#atomic-cross-chain-transfers)
 
 # Download
 
@@ -303,15 +288,36 @@ You have now compiled the Qora.jar file directly from source code.
 
 ## Submit a pull request
 
+You can submit a pull request to the source code by following the below steps.
 
-# Qora team
+# Help
 
-## Team
+## How To
 
-# Find Help
+Here you can find a quick How-To list
+
+- [How to install](#installation)
+- [How to create a wallet](#create-a-wallet)
+- [How to send payment](#send-payment)
+- [How to send message](#send-message)
+- [How to register a name](#register-a-name)
+- [How to vote](#vote)
+- [How to buy an asset](#buy-asset)
+- [How to sell an asset](#sell-asset)
+- [How to issue an asset](#issue-asset)
+- [How to deploy an AT](#deploy-at)
+- [How to make an Atomic Cross-Chain transfer](#atomic-cross-chain-transfers)
+
 
 ## FAQ
 
+Here are some frequently asked questions that might help you
+
 ## Known Issues
 
+Below are listed the latest know bugs
+
+
 ## Report a bug
+
+Found a bug? You can report it to the official Github of Qora!

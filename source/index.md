@@ -25,36 +25,18 @@ search: true
 
 # Getting Started
 
-- [Download the client](#downloads)
-- Create a Wallet
-- Learn the application
+- [Download and install the application](#installation)
+- [Create a Wallet](#create-a-wallet)
+- [Learn the application](#how-to)
 - Get some Qora
-
-# Download
-
-- Universal Wallet
-- Windows Wallet
-- MAC Wallet
-- Linux Wallet
-- ARM Wallet
-
-## Universal Wallet
-
-## Windows Wallet
-
-## MAC Wallet
-
-## Linux Wallet
-
-## ARM Wallet
 
 # Installation
 
-- Universal Wallet
-- Windows Wallet
-- MAC Wallet
-- Linux Wallet
-- ARM Wallet
+- [Universal Wallet](#universal-wallet)
+- [Windows Wallet](#windows-wallet)
+- [MAC Wallet](#mac-wallet)
+- [Linux Wallet](#linux-wallet)
+- [ARM Wallet](#arm-wallet)
 
 ## Universal Wallet
 
@@ -134,11 +116,11 @@ search: true
 
 # Assets
 
-# View Asset details
+## View Asset details
 
-# Add to Favorites
+## Add to Favorites
 
-# Open Pair
+## Open Pair
 
 ## Buy asset
 

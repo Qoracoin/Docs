@@ -182,7 +182,11 @@
 
 <h2 id="place-a-buy-order">Place a buy order</h2>
 
+<h2 id="cancel-a-buy-order">Cancel a buy order</h2>
+
 <h2 id="place-a-sell-order">Place a sell order</h2>
+
+<h2 id="cancel-a-sell-order">Cancel a sell order</h2>
 
 <h2 id="issue-asset">Issue asset</h2>
 
@@ -191,6 +195,74 @@
 <h2 id="send-multi-payment">Send multi payment</h2>
 
 <h1 id="arbitrary-transactions">Arbitrary Transactions</h1>
+
+<p>The data of the arbitrary transaction must be base58 encoded and must be between 1-4000 bytes.</p>
+
+<aside class="notice">
+Currently arbitrary transactions can only be made through the API.
+</aside>
+
+<p>To create an arbitrary transaction, open the console and then send your Command.</p>
+
+<p>Below you will see an example command.</p>
+
+<blockquote>
+<p>POST arbitrarytransacions {&ldquo;creator&rdquo;: &ldquo;QNbA69dbnmwqJHLQeS9v63hSLZXXGkmtC6&rdquo;,&ldquo;data&rdquo;:&ldquo;4GFHMAo9fmbUq7usopgntwUfAiLtpL98K6QCosAJsqQmY95tfd5KoUaKu34v6Qwp7RtYEhobCx7LVi7aYbbtpzfA&rdquo;,&ldquo;service&rdquo;: 555,&ldquo;fee&rdquo;: &ldquo;1.00001&rdquo;}</p>
+</blockquote>
+
+<p>Returns the transaction in JSON when successful.
+If you have encountered an error while making the arbitrary transaction, console will display the error code.
+Below is the errors list.</p>
+
+<h3 id="errors">ERRORS</h3>
+
+<table><thead>
+<tr>
+<th>Error</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>1</td>
+<td>Json error.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Not enough balance.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Not yet released.</td>
+</tr>
+<tr>
+<td>102</td>
+<td>Invalid address.</td>
+</tr>
+<tr>
+<td>105</td>
+<td>Invalid fee.</td>
+</tr>
+<tr>
+<td>115</td>
+<td>Invalid data.</td>
+</tr>
+<tr>
+<td>116</td>
+<td>Invalid data length.</td>
+</tr>
+<tr>
+<td>201</td>
+<td>Wallet does not exist.</td>
+</tr>
+<tr>
+<td>202</td>
+<td>Address does not exist in wallet.</td>
+</tr>
+<tr>
+<td>203</td>
+<td>Wallet is locked.</td>
+</tr>
+</tbody></table>
 
 <h1 id="automated-transactions">Automated Transactions</h1>
 
@@ -378,7 +450,7 @@ You will have to <a href="#start-the-wallet-from-the-eclipse's-workspace">run th
 
 <p>Here are some frequently asked questions that might help you</p>
 
-<h2 id="known-issues">Known Issues</h2>
+Known Issues</h2>
 
 <p>Below are listed the latest know bugs</p>
 

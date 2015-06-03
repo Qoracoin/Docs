@@ -271,7 +271,15 @@ Enter the values accordingly on each field and click deploy.
 
 ## Initiate ACCT
 
-## Response ACCT
+## Response ACCT  
+
+# Qora Web
+
+## Web Server  
+
+## Browse the web
+
+## Deploy a website
 
 # Tools
 
@@ -279,7 +287,7 @@ Here you can find a list of tools
 
 ## Block Explorer
 
-[Qora.co.in](http://qora.co.in) is an online Qora block chain browser which displays the contents of individual blocks, transactions, transaction histories, balances of addresses, unconfirmed transactions, assets, polls and many statistics.It's written and operated by agran and ti's the official Qora block explorer.
+[Qora.co.in](http://qora.co.in) is an online Qora block chain browser which displays the contents of individual blocks, transactions, transaction histories, balances of addresses, unconfirmed transactions, assets, polls and many statistics.It's written and operated by agran and it's the official Qora block explorer.
 
 ## Blogging Service
 

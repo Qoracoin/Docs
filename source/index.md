@@ -412,7 +412,7 @@ You have launched the wallet directly from source
 
 - Export
 
-  - On Launch Configuration field select **Start - Qora**from the drop down menu.
+  - On Launch Configuration field select **Start - Qora** from the drop down menu.
     You will have to [run the wallet first](#start-the-wallet-from-the-eclipse's-workspace) in order to have the option **Start  - Qora** available
   - / Select Export destination
   - / Select Package required libraries into generated JAR

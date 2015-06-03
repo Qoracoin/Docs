@@ -301,6 +301,8 @@ The data of the arbitrary transaction must be base58 encoded and must be between
 Currently arbitrary transactions can only be made through the API.
 </aside>
 
+<h2 id="send-arbitrary-transaction">Send arbitrary transaction</h2>
+
 <p>To create an arbitrary transaction, open the console and then send your Command.</p>
 
 <p>Below you will see an example command.</p>
@@ -364,6 +366,18 @@ Below is the errors list.</p>
 <td>Wallet is locked.</td>
 </tr>
 </tbody></table>
+
+<h2 id="load-arbitrary-transaction">Load arbitrary transaction</h2>
+
+<p>To load an arbitrary transaction, open the console and then send your Command.</p>
+
+<p>Below you will see an example command.</p>
+
+<blockquote>
+<p>POST transactions/scan {&ldquo;type&rdquo;:10,&ldquo;creator&rdquo;:&ldquo;QNbA69dbnmwqJHLQeS9v63hSLZXXGkmtC6&rdquo;}  </p>
+</blockquote>
+
+<p>Returns all the arbitrary transactions made by the given creator.  </p>
 
 <h1 id="automated-transactions">Automated Transactions</h1>
 

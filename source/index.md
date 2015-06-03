@@ -40,7 +40,7 @@ search: true
 
 ## Universal Wallet
 
-## Windows Wallet
+## Windows Wallet  
 
 ## MAC Wallet
 
@@ -55,6 +55,8 @@ search: true
 ## Known Peers
 
 ## Access Permission
+
+## Settings.json
 
 # Wallet
 
@@ -184,9 +186,15 @@ You can also made the above API request by simply visiting the below URL while R
 
 ## Update name
 
+## Transfer name
+
+## Exchange
+
 ## Buy a name
 
 ## Sell Name
+
+## Cancel sell name
 
 # Polls
 
@@ -197,6 +205,8 @@ You can also made the above API request by simply visiting the below URL while R
 ## Create a poll
 
 # Assets
+
+## Navigate
 
 ## View Asset details
 
@@ -325,17 +335,19 @@ Here you can find a quick How-To list
 - [How to make an Atomic Cross-Chain transfer](#atomic-cross-chain-transfers)
 
 
-## FAQ  
-
-Here are some frequently asked questions that might help you
-
 ## Known Issues  
 
 Below are listed the latest know bugs
 
+## Find help
+
 ## Report a bug  
 
 Found a bug? You can report it to the official Github of Qora!
+
+# FAQ  
+
+Here are some frequently asked questions that might help you.
 
 # Developers  
 

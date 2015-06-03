@@ -1,5 +1,5 @@
 ---
-title: Qora documentation
+title: Qora Documentation
 
 
 toc_footers:

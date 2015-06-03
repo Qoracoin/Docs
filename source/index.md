@@ -17,13 +17,6 @@ Qora is a second generation peer to peer cryptocurrency aims to solve Bitcoin's 
 
 Qora has been reilied on an IPO
 
-## Getting Started
-
-- [Download the client](#downloads)
-- Create a Wallet
-- Learn the application
-- Get some Qora
-
 ## Features
 
 - Ed25519 DSA to verify and sign messages.
@@ -44,6 +37,13 @@ Qora has been reilied on an IPO
 Source code has been first published on 09 of December, 2014 at version 18.Full source code has been published on Mar 14, 2015.
 
 ## External Resources
+
+# Getting Started
+
+- [Download the client](#downloads)
+- Create a Wallet
+- Learn the application
+- Get some Qora
 
 # How To
 
@@ -292,7 +292,7 @@ You have launched the wallet directly from source
 
 - Export
 
-  - On Launch Configuration field select ```Start - Qora```vfrom the drop down menu.
+  - On Launch Configuration field select ```Start - Qora```from the drop down menu.
     You will have to [run the wallet first](#start-the-wallet-from-the-eclipse's-workspace) in order to have the option ```Start  - Qora``` available
   - / Select Export destination
   - / Select Package required libraries into generated JAR

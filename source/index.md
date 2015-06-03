@@ -346,7 +346,7 @@ You can import the source code to a workspace in Eclipse by following the below 
 
 ![/ Import Existing Projects]( https://i.imgur.com/KC3LcJL.png "/ Import Existing Projects")
 
-- Click on ```Finish```
+- Click on **Finish**
 
 ![/ Finish](https://i.imgur.com/BRmXqYz.png "/ Finish")
 
@@ -354,7 +354,7 @@ You can import the source code to a workspace in Eclipse by following the below 
 
 When you have successfully imported Qora to your Eclipse's Workspace you then can start the wallet by following the below steps:
 
-- Select the ```>Qora [Qora master]``` from Package Explorer, click on Run on menu bar and then Run again.
+- Select the **>Qora [Qora master]** from Package Explorer, click on Run on menu bar and then Run again.
 
 ![Run](https://i.imgur.com/j38tm5s.png "Run")
 
@@ -371,18 +371,18 @@ You have launched the wallet directly from source
 </aside>
 ## Compile Qora from source code
 
-- Select the ```>Qora [Qora master]``` from Package Explorer
+- Select the **>Qora [Qora master]** from Package Explorer
 
 ![Master](http://i.imgur.com/H8tK1rZ.jpg "Master")
 
-- Go to ```/ File / Export / Java / Runnable JAR file```
+- Go to **/ File / Export / Java / Runnable JAR file**
 
 ![Export](https://i.imgur.com/sIadzQn.png "Export")
 
 - Export
 
-  - On Launch Configuration field select ```Start - Qora```from the drop down menu.
-    You will have to [run the wallet first](#start-the-wallet-from-the-eclipse's-workspace) in order to have the option ```Start  - Qora``` available
+  - On Launch Configuration field select **Start - Qora**from the drop down menu.
+    You will have to [run the wallet first](#start-the-wallet-from-the-eclipse's-workspace) in order to have the option **Start  - Qora** available
   - / Select Export destination
   - / Select Package required libraries into generated JAR
 

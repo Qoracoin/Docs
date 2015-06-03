@@ -304,11 +304,42 @@ You can find the latest version here : [https://github.com/agran/VanitygenQora/r
 
 ## HTML Editor
 
-## Multiple Pages Generator
+## Multiple Pages Generator  
 
-# Developers
+# Help  
 
-## Import source code to Eclipse
+## How To  
+
+Here you can find a quick How-To list
+
+- [How to install](#installation)
+- [How to create a wallet](#create-a-wallet)
+- [How to send payment](#send-payment)
+- [How to send message](#send-message)
+- [How to register a name](#register-a-name)
+- [How to vote](#vote)
+- [How to buy an asset](#buy-asset)
+- [How to sell an asset](#sell-asset)
+- [How to issue an asset](#issue-asset)
+- [How to deploy an AT](#deploy-at)
+- [How to make an Atomic Cross-Chain transfer](#atomic-cross-chain-transfers)
+
+
+## FAQ  
+
+Here are some frequently asked questions that might help you
+
+## Known Issues  
+
+Below are listed the latest know bugs
+
+## Report a bug  
+
+Found a bug? You can report it to the official Github of Qora!
+
+# Developers  
+
+## Import source code to Eclipse  
 
 You can import the source code to a workspace in Eclipse by following the below steps.
 
@@ -350,7 +381,7 @@ You can import the source code to a workspace in Eclipse by following the below 
 
 ![/ Finish](https://i.imgur.com/BRmXqYz.png "/ Finish")
 
-## Start the wallet from the Eclipse's workspace
+## Start the wallet from the Eclipse's workspace  
 
 When you have successfully imported Qora to your Eclipse's Workspace you then can start the wallet by following the below steps:
 
@@ -369,7 +400,7 @@ When you have successfully imported Qora to your Eclipse's Workspace you then ca
 <aside class="success">
 You have launched the wallet directly from source
 </aside>
-## Compile Qora from source code
+## Compile Qora from source code  
 
 - Select the **>Qora [Qora master]** from Package Explorer
 
@@ -392,43 +423,11 @@ You have launched the wallet directly from source
 You have now compiled the Qora.jar file directly from source code.
 </aside>  
 
-## API
+## API  
 
 Qora uses a REST API to communicate with the wallet.
 You can find the entire API documentation here : [http://api.qora.org](http://api.qora.org)
 
-## Submit a pull request
+## Submit a pull request  
 
 You can submit a pull request to the source code by following the below steps.
-
-# Help
-
-## How To
-
-Here you can find a quick How-To list
-
-- [How to install](#installation)
-- [How to create a wallet](#create-a-wallet)
-- [How to send payment](#send-payment)
-- [How to send message](#send-message)
-- [How to register a name](#register-a-name)
-- [How to vote](#vote)
-- [How to buy an asset](#buy-asset)
-- [How to sell an asset](#sell-asset)
-- [How to issue an asset](#issue-asset)
-- [How to deploy an AT](#deploy-at)
-- [How to make an Atomic Cross-Chain transfer](#atomic-cross-chain-transfers)
-
-
-## FAQ
-
-Here are some frequently asked questions that might help you
-
-## Known Issues
-
-Below are listed the latest know bugs
-
-
-## Report a bug
-
-Found a bug? You can report it to the official Github of Qora!

@@ -388,7 +388,9 @@ You have launched the wallet directly from source
 
 ![Export](https://i.imgur.com/BXvovZj.png "Export")  
 
+<aside class="success">
 You have now compiled the Qora.jar file directly from source code.
+</aside>  
 
 ## API
 

@@ -210,12 +210,7 @@ This service uses the arbitrary transactions feature of Qora to serve socialized
 
 # Developers
 
-## API
-
-Qora uses a REST API to communicate with the wallet.
-You can find the entire API documentation here : [http://api.qora.org](http://api.qora.org)
-
-## Import source code to eclipse
+## Import source code to Eclipse
 
 You can import the source code to a workspace in Eclipse by following the below steps.
 
@@ -296,6 +291,11 @@ You have launched the wallet directly from source
 ![Export](https://i.imgur.com/BXvovZj.png "Export")  
 
 You have now compiled the Qora.jar file directly from source code.
+
+## API
+
+Qora uses a REST API to communicate with the wallet.
+You can find the entire API documentation here : [http://api.qora.org](http://api.qora.org)
 
 ## Submit a pull request
 

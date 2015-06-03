@@ -1,5 +1,5 @@
 ---
-title: Qora Manual
+title: Qora documentation
 
 
 toc_footers:
@@ -62,9 +62,11 @@ search: true
 
 ## Create a Wallet
 
-## Recover wallet from seed
+## Recover wallet from seed  
 
-## Retrieve wallet's seed
+## Lock your wallet  
+
+## Unlock your wallet  
 
 # Accounts
 
@@ -74,7 +76,85 @@ search: true
 
 ## Import account from seed
 
+# Seed  
+
+## Retrieve wallet's seed  
+
+To retrieve the seed of your wallet you first need to have your [wallet unlocked](#unlock-your-wallet) in order to be able to get the seed.  
+Open the console and type the below command :
+
+> GET wallet/seed  
+
+The above command will return the 32-byte long base58-encoded wallet seed.  
+
+You can also made the above API request by simply visiting the below URL while RCP is enabled.  
+
+### HTTP Request  
+
+[http://127.0.0.1:9085/wallet/seed](http://127.0.0.1:9085/wallet/seed)  
+
+If you have encountered an error while making the above request, the exact error code will be displayed.Below is the errors list.  
+
+### ERRORS
+
+| Error |	Description |
+|-------|-------------|
+| 201 |	Wallet does not exist. |
+| 203 |	Wallet is locked. |
+
+<aside class="warning">
+The wallet seed is the ticket to access to your wallet, make sure it's kept safe and securely!
+</aside>
+
 ## Retrieve account's seed
+
+You can retrieve the seed of a specific address that exists in your wallet.  
+To retrieve the seed of your addres you first need to have your [wallet unlocked](#unlock-your-wallet) in order to be able to get the seed.  
+Open the console and type the below command :
+
+> GET addresses/seed/{address}
+
+The above command will return the 32-byte long base58-encoded seed of the given address.  
+
+You can also made the above API request by simply visiting the below URL while RCP is enabled.  
+
+### HTTP Request  
+
+[http://127.0.0.1:9085/addresses/seed/{address}](http://127.0.0.1:9085/addresses/seed/{address})
+
+If you have encountered an error while making the above request, the exact error code will be displayed.Below is the errors list.  
+
+### ERRORS
+
+| Error |	Description |
+|-------|-------------|
+| 102 |	Invalid address. |
+| 201 |	Wallet does not exist. |
+| 202 |	Address does not exist in wallet. |
+| 203 |	Wallet is locked. |
+
+<aside class="warning">
+The addres seed is the ticket to access to your address, make sure it's kept safe and securely!
+</aside>
+
+## Generate a seed
+
+You can generate a random base58 encoded seed with a simple API request.  
+Open the console and type the below command :
+
+> GET seed  
+
+The above command will return a base58 encoded random seed of 32 bytes.These seeds can be used to [create a wallet](#create-a-wallet) or to [import an account](#import-account-from-seed).  
+Use the optional parameter length to request a seed of {length} bytes.
+
+> GET seed/{length}  
+
+You can also made the above API request by simply visiting the below URL while RCP is enabled.  
+
+### HTTP Request  
+
+[http://127.0.0.1:9085/seed](http://127.0.0.1:9085/seed)  
+
 
 # Payments
 
@@ -110,6 +190,8 @@ search: true
 
 # Polls
 
+## Navigate
+
 ## Vote
 
 ## Create a poll
@@ -142,6 +224,7 @@ search: true
 
 # Arbitrary Transactions
 
+Arbitrary transactions is a Qora feature that allows storage on the blockchain.  
 The data of the arbitrary transaction must be base58 encoded and must be between 1-4000 bytes.
 
 <aside class="notice">
@@ -152,7 +235,8 @@ To create an arbitrary transaction, open the console and then send your Command.
 
 Below you will see an example command.
 
-> POST arbitrarytransacions {"creator": "QNbA69dbnmwqJHLQeS9v63hSLZXXGkmtC6","data":"4GFHMAo9fmbUq7usopgntwUfAiLtpL98K6QCosAJsqQmY95tfd5KoUaKu34v6Qwp7RtYEhobCx7LVi7aYbbtpzfA","service": 555,"fee": "1.00001"}
+> POST arbitrarytransacions {"creator": "QNbA69dbnmwqJHLQeS9v63hSLZXXGkmtC6",
+"data":"4GFHMAo9fmbUq7usopgntwUfAiLtpL98K6QCosAJsqQmY95tfd5KoUaKu34v6Qwp7RtYEhobCx7LVi7aYbbtpzfA","service": 555,"fee": "1.00001"}
 
 
 Returns the transaction in JSON when successful.
@@ -195,7 +279,7 @@ Here you can find a list of tools
 
 ## Block Explorer
 
-Official block explorer of Qora has been created by agran and you can find all the details you might need.
+[Qora.co.in](http://qora.co.in) is an online Qora block chain browser which displays the contents of individual blocks, transactions, transaction histories, balances of addresses, unconfirmed transactions, assets, polls and many statistics.It's written and operated by agran and ti's the official Qora block explorer.
 
 ## Blogging Service
 
@@ -203,6 +287,10 @@ Official blogging service of Qora has been created by agran and you can find it 
 This service uses the arbitrary transactions feature of Qora to serve socialized blogging suite.
 
 ## Faucet
+
+## Vanitygen
+
+**Vanitygen** is a command line vanity Qora address generator created by agran.
 
 ## HTML Editor
 

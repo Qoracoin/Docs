@@ -283,14 +283,16 @@ Here you can find a list of tools
 
 ## Blogging Service
 
-Official blogging service of Qora has been created by agran and you can find it here :
-This service uses the arbitrary transactions feature of Qora to serve socialized blogging suite.
+Official blogging service of Qora has been created by agran and you can find it here : [http://qora.co.in/?blog](http://qora.co.in/?blog)  
+This service uses the arbitrary transactions feature of Qora to serve a socialized blogging suite.  
+To create a new blog post you have to generate the command by using the [create post tool](http://qora.co.in/?newpost).  
 
 ## Faucet
 
-## Vanitygen
+## VanitygenQora
 
-**Vanitygen** is a command line vanity Qora address generator created by agran.
+**VanitygenQora** is a command-line vanity Qora address generator created by agran.  
+You can find the latest version here : [https://github.com/agran/VanitygenQora/releases](https://github.com/agran/VanitygenQora/releases)
 
 ## HTML Editor
 

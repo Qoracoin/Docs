@@ -42,20 +42,25 @@ search: true
 
 1. Make sure you have the newest version of Java installed for you operating system, check your [java version here](https://www.java.com/en/download/installed.jsp.)
 
-2. Check the Qora blockexplorer for newest version [http://qora.co.in](http://qora.co.in), there is a link near the top of the page that will take you to the download page.
+2. Check the Qora block explorer for newest version [http://qora.co.in](http://qora.co.in), there is a link near the top of the page that will take you to the download page.
 
-3. Download the Qora\_vX.XX.X.zip file.Latest version [![release](https://img.shields.io/github/release/Qoracoin/Qora.svg)](https://github.com/Qoracoin/Qora/releases)
+3. Download the Qora\_vX.XX.X.zip file.  
 
-4. Once the file is downloaded, unzip it and it will make a Qora folder. You can move the Qora folder to wherever you like ie destop, home directory etc.
+Latest version  
 
-5. Inside the Qora folder there will be a run,bat and run.sh file
+[![release](https://img.shields.io/github/release/Qoracoin/Qora.svg)](https://github.com/Qoracoin/Qora/releases)
 
+4. Once the file is downloaded, unzip it and it will make a Qora folder.You can move the Qora folder to wherever you like i.e. desktop, home directory etc.
+
+5. Inside the Qora folder there will be a **run.bat** and **run.sh** file
 
       To run in Linux:
 
-Use the run.sh file for Linux. Make sure you have the right permissions set to execute the file, right click on run.sh, choose properties from the menu, go to the Permissions tab, in the Execute field make sure it reads Only owner and group, aplly changes if needed.
+Use the **run.sh** file for Linux. Make sure you have the right permissions set to execute the file, right click on **run.sh**, choose properties from the menu, go to the Permissions tab, in the Execute field make sure it reads Only owner and group, apply changes if needed.
 
-To run it you can click on run.sh and if a popup windows appears choose the excute option, or you can open a command prompt, change into the Qora folder and type ./run.sh
+To run it you can click on run.sh and if a popup windows appears choose the execute option, or you can open a command prompt, change into the Qora folder and type :
+
+`./run.sh`
 
 ## Windows Wallet  
 

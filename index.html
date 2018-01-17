@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
   <head>
@@ -6,130 +7,601 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Qora Documentation</title>
 
-    <link href="stylesheets/screen.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="stylesheets/print.css" rel="stylesheet" type="text/css" media="print" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-      <script src="javascripts/all.js" type="text/javascript"></script>
-
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all.js"></script>
   </head>
 
-  <body class="index">
+  <body class="index" data-languages="[]">
     <a href="#" id="nav-button">
       <span>
         NAV
-        <img src="images/navbar.png" />
+        <img src="images/navbar.png" alt="Navbar" />
       </span>
     </a>
-    <div class="tocify-wrapper">
-      <img src="images/logo.png" />
+    <div class="toc-wrapper">
+      <img src="images/logo.png" class="logo" alt="Logo" />
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
         </div>
         <ul class="search-results"></ul>
-      <div id="toc">
+      <div id="toc" class="toc-list-h1">
+          <li>
+            <a href="#about-qora" class="toc-h1 toc-link" data-title="About Qora">About Qora</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#source-code" class="toc-h2 toc-link" data-title="Source Code">Source Code</a>
+                  </li>
+                  <li>
+                    <a href="#external-resources" class="toc-h2 toc-link" data-title="External Resources">External Resources</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#getting-started" class="toc-h1 toc-link" data-title="Getting Started">Getting Started</a>
+          </li>
+          <li>
+            <a href="#installation" class="toc-h1 toc-link" data-title="Installation">Installation</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#windows-wallet" class="toc-h2 toc-link" data-title="Windows Wallet">Windows Wallet</a>
+                  </li>
+                  <li>
+                    <a href="#universal-wallet" class="toc-h2 toc-link" data-title="Universal Wallet">Universal Wallet</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#settings" class="toc-h1 toc-link" data-title="Settings">Settings</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#basic" class="toc-h2 toc-link" data-title="Basic">Basic</a>
+                  </li>
+                  <li>
+                    <a href="#known-peers" class="toc-h2 toc-link" data-title="Known Peers">Known Peers</a>
+                  </li>
+                  <li>
+                    <a href="#access-permission" class="toc-h2 toc-link" data-title="Access Permission">Access Permission</a>
+                  </li>
+                  <li>
+                    <a href="#settings-json" class="toc-h2 toc-link" data-title="settings.json">settings.json</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#wallet" class="toc-h1 toc-link" data-title="Wallet">Wallet</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#start-the-application" class="toc-h2 toc-link" data-title="Start the application">Start the application</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-wallet" class="toc-h2 toc-link" data-title="Create a Wallet">Create a Wallet</a>
+                  </li>
+                  <li>
+                    <a href="#recover-wallet-from-seed" class="toc-h2 toc-link" data-title="Recover wallet from seed">Recover wallet from seed</a>
+                  </li>
+                  <li>
+                    <a href="#lock-your-wallet" class="toc-h2 toc-link" data-title="Lock your wallet">Lock your wallet</a>
+                  </li>
+                  <li>
+                    <a href="#unlock-your-wallet" class="toc-h2 toc-link" data-title="Unlock your wallet">Unlock your wallet</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#accounts" class="toc-h1 toc-link" data-title="Accounts">Accounts</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#create-account" class="toc-h2 toc-link" data-title="Create account">Create account</a>
+                  </li>
+                  <li>
+                    <a href="#delete-account" class="toc-h2 toc-link" data-title="Delete account">Delete account</a>
+                  </li>
+                  <li>
+                    <a href="#import-account-from-seed" class="toc-h2 toc-link" data-title="Import account from seed">Import account from seed</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#seed" class="toc-h1 toc-link" data-title="Seed">Seed</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#retrieve-wallet-39-s-seed" class="toc-h2 toc-link" data-title="Retrieve wallet's seed">Retrieve wallet's seed</a>
+                  </li>
+                  <li>
+                    <a href="#retrieve-account-39-s-seed" class="toc-h2 toc-link" data-title="Retrieve account's seed">Retrieve account's seed</a>
+                  </li>
+                  <li>
+                    <a href="#generate-a-seed" class="toc-h2 toc-link" data-title="Generate a seed">Generate a seed</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#payments" class="toc-h1 toc-link" data-title="Payments">Payments</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#send-payment" class="toc-h2 toc-link" data-title="Send Payment">Send Payment</a>
+                  </li>
+                  <li>
+                    <a href="#send-name-payment" class="toc-h2 toc-link" data-title="Send Name Payment">Send Name Payment</a>
+                  </li>
+                  <li>
+                    <a href="#send-payment-within-a-message" class="toc-h2 toc-link" data-title="Send payment within a message">Send payment within a message</a>
+                  </li>
+                  <li>
+                    <a href="#send-multi-payment" class="toc-h2 toc-link" data-title="Send multi payment">Send multi payment</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#messages" class="toc-h1 toc-link" data-title="Messages">Messages</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#send-message" class="toc-h2 toc-link" data-title="Send message">Send message</a>
+                  </li>
+                  <li>
+                    <a href="#encrypt-message" class="toc-h2 toc-link" data-title="Encrypt message">Encrypt message</a>
+                  </li>
+                  <li>
+                    <a href="#decrypt-message" class="toc-h2 toc-link" data-title="Decrypt message">Decrypt message</a>
+                  </li>
+                  <li>
+                    <a href="#sign-a-message" class="toc-h2 toc-link" data-title="Sign a message">Sign a message</a>
+                  </li>
+                  <li>
+                    <a href="#verify-message" class="toc-h2 toc-link" data-title="Verify message">Verify message</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#naming-service" class="toc-h1 toc-link" data-title="Naming service">Naming service</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#register-a-name" class="toc-h2 toc-link" data-title="Register a name">Register a name</a>
+                  </li>
+                  <li>
+                    <a href="#update-name" class="toc-h2 toc-link" data-title="Update name">Update name</a>
+                  </li>
+                  <li>
+                    <a href="#transfer-name" class="toc-h2 toc-link" data-title="Transfer name">Transfer name</a>
+                  </li>
+                  <li>
+                    <a href="#exchange" class="toc-h2 toc-link" data-title="Exchange">Exchange</a>
+                  </li>
+                  <li>
+                    <a href="#buy-a-name" class="toc-h2 toc-link" data-title="Buy a name">Buy a name</a>
+                  </li>
+                  <li>
+                    <a href="#sell-name" class="toc-h2 toc-link" data-title="Sell Name">Sell Name</a>
+                  </li>
+                  <li>
+                    <a href="#cancel-sell-name" class="toc-h2 toc-link" data-title="Cancel sell name">Cancel sell name</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#polls" class="toc-h1 toc-link" data-title="Polls">Polls</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#navigate" class="toc-h2 toc-link" data-title="Navigate">Navigate</a>
+                  </li>
+                  <li>
+                    <a href="#vote" class="toc-h2 toc-link" data-title="Vote">Vote</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-poll" class="toc-h2 toc-link" data-title="Create a poll">Create a poll</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#assets" class="toc-h1 toc-link" data-title="Assets">Assets</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#navigate-2" class="toc-h2 toc-link" data-title="Navigate">Navigate</a>
+                  </li>
+                  <li>
+                    <a href="#view-asset-details" class="toc-h2 toc-link" data-title="View Asset details">View Asset details</a>
+                  </li>
+                  <li>
+                    <a href="#add-to-favorites" class="toc-h2 toc-link" data-title="Add to Favorites">Add to Favorites</a>
+                  </li>
+                  <li>
+                    <a href="#open-pair" class="toc-h2 toc-link" data-title="Open Pair">Open Pair</a>
+                  </li>
+                  <li>
+                    <a href="#buy-asset" class="toc-h2 toc-link" data-title="Buy asset">Buy asset</a>
+                  </li>
+                  <li>
+                    <a href="#sell-asset" class="toc-h2 toc-link" data-title="Sell asset">Sell asset</a>
+                  </li>
+                  <li>
+                    <a href="#place-a-buy-order" class="toc-h2 toc-link" data-title="Place a buy order">Place a buy order</a>
+                  </li>
+                  <li>
+                    <a href="#cancel-a-buy-order" class="toc-h2 toc-link" data-title="Cancel a buy order">Cancel a buy order</a>
+                  </li>
+                  <li>
+                    <a href="#place-a-sell-order" class="toc-h2 toc-link" data-title="Place a sell order">Place a sell order</a>
+                  </li>
+                  <li>
+                    <a href="#cancel-a-sell-order" class="toc-h2 toc-link" data-title="Cancel a sell order">Cancel a sell order</a>
+                  </li>
+                  <li>
+                    <a href="#issue-asset" class="toc-h2 toc-link" data-title="Issue asset">Issue asset</a>
+                  </li>
+                  <li>
+                    <a href="#transfer-asset" class="toc-h2 toc-link" data-title="Transfer asset">Transfer asset</a>
+                  </li>
+                  <li>
+                    <a href="#send-multi-payment-2" class="toc-h2 toc-link" data-title="Send multi payment">Send multi payment</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#arbitrary-transactions" class="toc-h1 toc-link" data-title="Arbitrary Transactions">Arbitrary Transactions</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#send-arbitrary-transaction" class="toc-h2 toc-link" data-title="Send arbitrary transaction">Send arbitrary transaction</a>
+                  </li>
+                  <li>
+                    <a href="#load-arbitrary-transaction" class="toc-h2 toc-link" data-title="Load arbitrary transaction">Load arbitrary transaction</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#automated-transactions" class="toc-h1 toc-link" data-title="Automated Transactions">Automated Transactions</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#deploy-at" class="toc-h2 toc-link" data-title="Deploy AT">Deploy AT</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#atomic-cross-chain-transfers" class="toc-h1 toc-link" data-title="Atomic Cross-Chain Transfers">Atomic Cross-Chain Transfers</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#initiate-acct" class="toc-h2 toc-link" data-title="Initiate ACCT">Initiate ACCT</a>
+                  </li>
+                  <li>
+                    <a href="#response-acct" class="toc-h2 toc-link" data-title="Response ACCT">Response ACCT</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#qora-web" class="toc-h1 toc-link" data-title="Qora Web">Qora Web</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#web-server" class="toc-h2 toc-link" data-title="Web Server">Web Server</a>
+                  </li>
+                  <li>
+                    <a href="#browse-the-web" class="toc-h2 toc-link" data-title="Browse the web">Browse the web</a>
+                  </li>
+                  <li>
+                    <a href="#deploy-a-website" class="toc-h2 toc-link" data-title="Deploy a website">Deploy a website</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#tools" class="toc-h1 toc-link" data-title="Tools">Tools</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#block-explorer" class="toc-h2 toc-link" data-title="Block Explorer">Block Explorer</a>
+                  </li>
+                  <li>
+                    <a href="#blogging-service" class="toc-h2 toc-link" data-title="Blogging Service">Blogging Service</a>
+                  </li>
+                  <li>
+                    <a href="#faucet" class="toc-h2 toc-link" data-title="Faucet">Faucet</a>
+                  </li>
+                  <li>
+                    <a href="#vanitygenqora" class="toc-h2 toc-link" data-title="VanitygenQora">VanitygenQora</a>
+                  </li>
+                  <li>
+                    <a href="#html-editor" class="toc-h2 toc-link" data-title="HTML Editor">HTML Editor</a>
+                  </li>
+                  <li>
+                    <a href="#multiple-pages-generator" class="toc-h2 toc-link" data-title="Multiple Pages Generator">Multiple Pages Generator</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#help" class="toc-h1 toc-link" data-title="Help">Help</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#how-to" class="toc-h2 toc-link" data-title="How To">How To</a>
+                  </li>
+                  <li>
+                    <a href="#known-issues" class="toc-h2 toc-link" data-title="Known Issues">Known Issues</a>
+                  </li>
+                  <li>
+                    <a href="#find-help" class="toc-h2 toc-link" data-title="Find help">Find help</a>
+                  </li>
+                  <li>
+                    <a href="#report-a-bug" class="toc-h2 toc-link" data-title="Report a bug">Report a bug</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#faq" class="toc-h1 toc-link" data-title="FAQ">FAQ</a>
+          </li>
+          <li>
+            <a href="#developers" class="toc-h1 toc-link" data-title="Developers">Developers</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#import-source-code-to-eclipse" class="toc-h2 toc-link" data-title="Import source code to Eclipse">Import source code to Eclipse</a>
+                  </li>
+                  <li>
+                    <a href="#start-the-wallet-from-the-eclipse-39-s-workspace" class="toc-h2 toc-link" data-title="Start the wallet from the Eclipse's workspace">Start the wallet from the Eclipse's workspace</a>
+                  </li>
+                  <li>
+                    <a href="#compile-qora-from-source-code" class="toc-h2 toc-link" data-title="Compile Qora from source code">Compile Qora from source code</a>
+                  </li>
+                  <li>
+                    <a href="#api" class="toc-h2 toc-link" data-title="API">API</a>
+                  </li>
+                  <li>
+                    <a href="#submit-a-pull-request" class="toc-h2 toc-link" data-title="Submit a pull request">Submit a pull request</a>
+                  </li>
+              </ul>
+          </li>
       </div>
         <ul class="toc-footer">
             <li><a href='http://github.com/tripit/slate'>Documentation Powered by Slate</a></li>
         </ul>
     </div>
     <div class="page-wrapper">
+      <div class="dark-box"></div>
       <div class="content">
-        <h1 id="introduction">Introduction</h1>
-
-<h1 id="about-qora">About Qora</h1>
-
-<h2 id="features">Features</h2>
-
-<h2 id="source-code">Source Code</h2>
-
-<h2 id="external-resources">External Resources</h2>
-
-<h1 id="getting-started">Getting Started</h1>
-
+        <h1 id='about-qora'>About Qora</h1>
+<p>Qora is a community-based cryptocurrency network. The emphasis is on community services like blogs, websites, etc. based on blockchain technology.</p>
+<h2 id='source-code'>Source Code</h2>
+<p>Qora source code is hosted by <a href="https://github.com/Qoracoin/Qora">github</a></p>
+<h2 id='external-resources'>External Resources</h2>
+<p>Take a look at the <a href="http://qora.org">Qora website</a></p>
+<h1 id='getting-started'>Getting Started</h1>
 <ul>
 <li><a href="#installation">Download and install the application</a></li>
 <li><a href="#create-a-wallet">Create a Wallet</a></li>
 <li><a href="#how-to">Learn the application</a></li>
 <li>Get some Qora</li>
 </ul>
-
-<h1 id="installation">Installation</h1>
-
+<h1 id='installation'>Installation</h1>
 <ul>
-<li><a href="#universal-wallet">Universal Wallet</a></li>
 <li><a href="#windows-wallet">Windows Wallet</a></li>
-<li><a href="#mac-wallet">MAC Wallet</a></li>
-<li><a href="#linux-wallet">Linux Wallet</a></li>
-<li><a href="#arm-wallet">ARM Wallet</a></li>
+<li><a href="#universal-wallet">Universal Wallet</a></li>
+</ul>
+<h2 id='windows-wallet'>Windows Wallet</h2>
+<ol>
+<li><p>Download the latest Windows installer from github: <a href="https://github.com/Qoracoin/Qora/releases"><img src="https://img.shields.io/github/release/Qoracoin/Qora.svg" alt="release" /></a></p></li>
+<li><p>Run the installer and follow the instructions.</p></li>
+<li><p>If installation is successful then you should have a Qora desktop icon and entries in your Windows menu.</p></li>
+</ol>
+<h2 id='universal-wallet'>Universal Wallet</h2>
+<ol>
+<li><p>Make sure you have at least Java v8 installed. <a href="https://www.java.com/en/download/installed.jsp">Check your Java version</a> or <a href="https://www.java.com/en/download/manual.jsp">download Java</a></p></li>
+<li><p>Download the latest Qora Zipfile from github: <a href="https://github.com/Qoracoin/Qora/releases"><img src="https://img.shields.io/github/release/Qoracoin/Qora.svg" alt="release" /></a></p></li>
+<li><p>Once the file is downloaded, unzip it and it will make a Qora folder. You can move the Qora folder to wherever you like i.e. desktop, home directory etc.</p></li>
+<li><p>Inside the Qora folder there will be a <strong>run.sh</strong> file you can double-click. Make sure you have the right permissions set to execute the file, right click on <strong>run.sh</strong>, choose &quot;Properties&quot; from the menu, go to the &quot;Permissions&quot; tab, in the &quot;Execute&quot; field make sure it reads &quot;Only owner and group&quot; and apply changes if needed.</p></li>
+<li><p>Alternatively you can open a command prompt or shell window, change directory to the Qora folder and type:</p></li>
+</ol>
+
+<p><code>./run.sh</code></p>
+<h1 id='settings'>Settings</h1><h2 id='basic'>Basic</h2>
+<ul>
+<li>GUI Enabled</li>
 </ul>
 
-<h2 id="universal-wallet">Universal Wallet</h2>
+<p>Most users will leave this enabled so they can access their wallets. Only people running a headless, high-availability node might consider disabling the GUI.</p>
 
-<ol>
-<li><p>Make sure you have the newest version of Java installed for you operating system, check your <a href="https://www.java.com/en/download/installed.jsp.">java version here</a></p></li>
-<li><p>Check the Qora block explorer for newest version <a href="http://qora.co.in">http://qora.co.in</a>, there is a link near the top of the page that will take you to the download page.</p></li>
-<li><p>Download the Qora_vX.XX.X.zip file.  </p></li>
-</ol>
+<ul>
+<li>RPC Enabled</li>
+<li>RPC port</li>
+</ul>
 
-<p>Latest version  </p>
+<p>Enabling RPC allows your Qora client to process API calls via the specified port using HTTP. Some of the built-in web pages use API calls, e.g. block explorer, name storage, anything wallet-related. For these to work you need to have RPC enabled. To restrict API callers, take a look at <a href="#access-permission">Access Permissions</a>.</p>
 
-<p><a href="https://github.com/Qoracoin/Qora/releases"><img alt="release" src="https://img.shields.io/github/release/Qoracoin/Qora.svg" /></a></p>
+<ul>
+<li>WEB Enabled</li>
+<li>WEB port</li>
+</ul>
 
-<ol>
-<li><p>Once the file is downloaded, unzip it and it will make a Qora folder.You can move the Qora folder to wherever you like i.e. desktop, home directory etc.</p></li>
-<li><p>Inside the Qora folder there will be a <strong>run.bat</strong> and <strong>run.sh</strong> file</p>
-
-<p>To run in Linux:</p></li>
-</ol>
-
-<p>Use the <strong>run.sh</strong> file for Linux. Make sure you have the right permissions set to execute the file, right click on <strong>run.sh</strong>, choose properties from the menu, go to the Permissions tab, in the Execute field make sure it reads Only owner and group, apply changes if needed.</p>
-
-<p>To run it you can click on run.sh and if a popup windows appears choose the execute option, or you can open a command prompt, change into the Qora folder and type :</p>
-
-<p><code class="prettyprint">./run.sh</code></p>
-
-<h2 id="windows-wallet">Windows Wallet</h2>
-
-<h2 id="mac-wallet">MAC Wallet</h2>
-
-<h2 id="linux-wallet">Linux Wallet</h2>
-
-<h2 id="arm-wallet">ARM Wallet</h2>
-
-<h1 id="settings">Settings</h1>
-
-<h2 id="basic">Basic</h2>
-
-<h2 id="known-peers">Known Peers</h2>
-
-<h2 id="access-permission">Access Permission</h2>
-
-<h2 id="settings.json">Settings.json</h2>
-
-<h1 id="wallet">Wallet</h1>
-
-<h2 id="start-the-application">Start the application</h2>
-
-<h2 id="create-a-wallet">Create a Wallet</h2>
-
-<h2 id="recover-wallet-from-seed">Recover wallet from seed</h2>
-
-<h2 id="lock-your-wallet">Lock your wallet</h2>
-
-<h2 id="unlock-your-wallet">Unlock your wallet</h2>
-
-<h1 id="accounts">Accounts</h1>
-
-<h2 id="create-account">Create account</h2>
-
-<h2 id="delete-account">Delete account</h2>
-
-<h2 id="import-account-from-seed">Import account from seed</h2>
-
-<h1 id="seed">Seed</h1>
-
-<h2 id="retrieve-wallet&#39;s-seed">Retrieve wallet&rsquo;s seed</h2>
-
+<p>Enabling WEB allows you to access the Qora network/blockchain/features using your web browser, which might be easier and more feature-rich than the Qora client&#39;s GUI. To restrict access, take a look at <a href="#access-permission">Access Permissions</a>.</p>
+<h2 id='known-peers'>Known Peers</h2>
+<p>This is a list of peer IP addresses known to your Qora client, along with a tick-box to show if you&#39;re connected to them. You can add new peer IP addresses using the input box below then clicking &quot;Add&quot;. To remove an address, right-click on the address and select &quot;Delete address&quot;.</p>
+<h2 id='access-permission'>Access Permission</h2>
+<p>These are two lists of IP addresses that can connect to the RPC and WEB ports of your Qora client (if enabled). You can add IP addresses using the input box below then clicking &quot;Add&quot;. To remove an address, right-click on the address and select &quot;Delete address&quot;.</p>
+<h2 id='settings-json'>settings.json</h2>
+<p>When you click &quot;Apply&quot; your settings.json file will be rewritten to reflect the new settings.</p>
+<h1 id='wallet'>Wallet</h1><h2 id='start-the-application'>Start the application</h2><h2 id='create-a-wallet'>Create a Wallet</h2><h2 id='recover-wallet-from-seed'>Recover wallet from seed</h2><h2 id='lock-your-wallet'>Lock your wallet</h2><h2 id='unlock-your-wallet'>Unlock your wallet</h2><h1 id='accounts'>Accounts</h1><h2 id='create-account'>Create account</h2><h2 id='delete-account'>Delete account</h2><h2 id='import-account-from-seed'>Import account from seed</h2><h1 id='seed'>Seed</h1><h2 id='retrieve-wallet-39-s-seed'>Retrieve wallet&#39;s seed</h2>
 <p>To retrieve the seed of your wallet you first need to have your <a href="#unlock-your-wallet">wallet unlocked</a> in order to be able to get the seed.<br>
 Open the console and type the below command :</p>
 
@@ -140,15 +612,11 @@ Open the console and type the below command :</p>
 <p>The above command will return the 32-byte long base58-encoded wallet seed.  </p>
 
 <p>You can also made the above API request by simply visiting the below URL while RCP is enabled.  </p>
-
-<h3 id="http-request">HTTP Request</h3>
-
+<h3 id='http-request'>HTTP Request</h3>
 <p><a href="http://127.0.0.1:9085/wallet/seed">http://127.0.0.1:9085/wallet/seed</a>  </p>
 
 <p>If you have encountered an error while making the above request, the exact error code will be displayed.Below is the errors list.  </p>
-
-<h3 id="errors">ERRORS</h3>
-
+<h3 id='errors'>ERRORS</h3>
 <table><thead>
 <tr>
 <th>Error</th>
@@ -166,11 +634,9 @@ Open the console and type the below command :</p>
 </tbody></table>
 
 <aside class="warning">
-The wallet seed is the ticket to access to your wallet, make sure it&rsquo;s kept safe and securely!
+The wallet seed is the ticket to access to your wallet, make sure it's kept safe and securely!
 </aside>
-
-<h2 id="retrieve-account&#39;s-seed">Retrieve account&rsquo;s seed</h2>
-
+<h2 id='retrieve-account-39-s-seed'>Retrieve account&#39;s seed</h2>
 <p>You can retrieve the seed of a specific address that exists in your wallet.<br>
 To retrieve the seed of your addres you first need to have your <a href="#unlock-your-wallet">wallet unlocked</a> in order to be able to get the seed.<br>
 Open the console and type the below command :</p>
@@ -182,15 +648,11 @@ Open the console and type the below command :</p>
 <p>The above command will return the 32-byte long base58-encoded seed of the given address.  </p>
 
 <p>You can also made the above API request by simply visiting the below URL while RCP is enabled.  </p>
-
-<h3 id="http-request">HTTP Request</h3>
-
+<h3 id='http-request-2'>HTTP Request</h3>
 <p><a href="http://127.0.0.1:9085/addresses/seed/{address}">http://127.0.0.1:9085/addresses/seed/{address}</a></p>
 
 <p>If you have encountered an error while making the above request, the exact error code will be displayed.Below is the errors list.  </p>
-
-<h3 id="errors">ERRORS</h3>
-
+<h3 id='errors-2'>ERRORS</h3>
 <table><thead>
 <tr>
 <th>Error</th>
@@ -216,11 +678,9 @@ Open the console and type the below command :</p>
 </tbody></table>
 
 <aside class="warning">
-The addres seed is the ticket to access to your address, make sure it&rsquo;s kept safe and securely!
+The addres seed is the ticket to access to your address, make sure it's kept safe and securely!
 </aside>
-
-<h2 id="generate-a-seed">Generate a seed</h2>
-
+<h2 id='generate-a-seed'>Generate a seed</h2>
 <p>You can generate a random base58 encoded seed with a simple API request.<br>
 Open the console and type the below command :</p>
 
@@ -236,112 +696,54 @@ Use the optional parameter length to request a seed of {length} bytes.</p>
 </blockquote>
 
 <p>You can also made the above API request by simply visiting the below URL while RCP is enabled.  </p>
-
-<h3 id="http-request">HTTP Request</h3>
-
+<h3 id='http-request-3'>HTTP Request</h3>
 <p><a href="http://127.0.0.1:9085/seed">http://127.0.0.1:9085/seed</a>  </p>
+<h1 id='payments'>Payments</h1><h2 id='send-payment'>Send Payment</h2><h2 id='send-name-payment'>Send Name Payment</h2><h2 id='send-payment-within-a-message'>Send payment within a message</h2><h2 id='send-multi-payment'>Send multi payment</h2><h1 id='messages'>Messages</h1><h2 id='send-message'>Send message</h2><h2 id='encrypt-message'>Encrypt message</h2><h2 id='decrypt-message'>Decrypt message</h2><h2 id='sign-a-message'>Sign a message</h2><h2 id='verify-message'>Verify message</h2><h1 id='naming-service'>Naming service</h1><h2 id='register-a-name'>Register a name</h2>
+<ol>
+<li>Using your Qora client, first click on the &quot;Naming Service&quot; tab.</li>
+<li>Next click on &quot;Register&quot; button. This should open a new window.</li>
+<li>Select the Qora account that should own, and pay for, your new name from the drop-down list.</li>
+<li>Type in your chosen name in the &quot;Name&quot; box. As you type the &quot;Name Details&quot; box below will inform you if your name has already been taken or not.</li>
+<li>For first time use, you can ignore the &quot;Key&quot; and &quot;Value&quot; fields - or delete the &quot;defaultkey&quot; that is made for you using the &quot;Remove&quot; button.</li>
+<li>Click the &quot;Register&quot; button and your name registration request transaction will be submitted to the Qora network for confirmation.</li>
+</ol>
 
-<h1 id="payments">Payments</h1>
+<p>You will know when your new name is ready to use when the &quot;Confirmed&quot; tick-box is ticked.</p>
+<h2 id='update-name'>Update name</h2>
+<ol>
+<li>Using your Qora client, first click on the &quot;Naming Service&quot; tab.</li>
+<li>Right-click on a name and select &quot;Update&quot; from the pop-up menu. This should open a new window.</li>
+<li>In this new window you can change the owner (make sure you get the address correct) or add/remove key-value pairs associated with the name using the &quot;Add&quot; and &quot;Remove&quot; buttons.
 
-<h2 id="send-payment">Send Payment</h2>
+<ul>
+<li>To add a key-value pair, enter the key and value in the respective input boxes then click &quot;Add&quot;</li>
+<li>To remove a key-value pair, single-click the pair in the list to highlight it then click &quot;Remove&quot;</li>
+</ul></li>
+</ol>
 
-<h2 id="send-name-payment">Send Name Payment</h2>
-
-<h2 id="send-payment-within-a-message">Send payment within a message</h2>
-
-<h2 id="send-multi-payment">Send multi payment</h2>
-
-<h1 id="messages">Messages</h1>
-
-<h2 id="send-message">Send message</h2>
-
-<h2 id="encrypt-message">Encrypt message</h2>
-
-<h2 id="decrypt-message">Decrypt message</h2>
-
-<h2 id="sign-a-message">Sign a message</h2>
-
-<h2 id="verify-message">Verify message</h2>
-
-<h1 id="naming-service">Naming service</h1>
-
-<h2 id="register-a-name">Register a name</h2>
-
-<h2 id="update-name">Update name</h2>
-
-<h2 id="transfer-name">Transfer name</h2>
-
-<h2 id="exchange">Exchange</h2>
-
-<h2 id="buy-a-name">Buy a name</h2>
-
-<h2 id="sell-name">Sell Name</h2>
-
-<h2 id="cancel-sell-name">Cancel sell name</h2>
-
-<h1 id="polls">Polls</h1>
-
-<h2 id="navigate">Navigate</h2>
-
-<h2 id="vote">Vote</h2>
-
-<h2 id="create-a-poll">Create a poll</h2>
-
-<h1 id="assets">Assets</h1>
-
-<h2 id="navigate">Navigate</h2>
-
-<h2 id="view-asset-details">View Asset details</h2>
-
-<h2 id="add-to-favorites">Add to Favorites</h2>
-
-<h2 id="open-pair">Open Pair</h2>
-
-<h2 id="buy-asset">Buy asset</h2>
-
-<h2 id="sell-asset">Sell asset</h2>
-
-<h2 id="place-a-buy-order">Place a buy order</h2>
-
-<h2 id="cancel-a-buy-order">Cancel a buy order</h2>
-
-<h2 id="place-a-sell-order">Place a sell order</h2>
-
-<h2 id="cancel-a-sell-order">Cancel a sell order</h2>
-
-<h2 id="issue-asset">Issue asset</h2>
-
-<h2 id="transfer-asset">Transfer asset</h2>
-
-<h2 id="send-multi-payment">Send multi payment</h2>
-
-<h1 id="arbitrary-transactions">Arbitrary Transactions</h1>
-
+<p>Note that altering the data storage associated with a name is done via <a href="http://127.0.0.1:9090/index/namestorage.html">the web-based name storage editor</a></p>
+<h2 id='transfer-name'>Transfer name</h2><h2 id='exchange'>Exchange</h2><h2 id='buy-a-name'>Buy a name</h2><h2 id='sell-name'>Sell Name</h2><h2 id='cancel-sell-name'>Cancel sell name</h2><h1 id='polls'>Polls</h1><h2 id='navigate'>Navigate</h2><h2 id='vote'>Vote</h2><h2 id='create-a-poll'>Create a poll</h2><h1 id='assets'>Assets</h1><h2 id='navigate-2'>Navigate</h2><h2 id='view-asset-details'>View Asset details</h2><h2 id='add-to-favorites'>Add to Favorites</h2><h2 id='open-pair'>Open Pair</h2><h2 id='buy-asset'>Buy asset</h2><h2 id='sell-asset'>Sell asset</h2><h2 id='place-a-buy-order'>Place a buy order</h2><h2 id='cancel-a-buy-order'>Cancel a buy order</h2><h2 id='place-a-sell-order'>Place a sell order</h2><h2 id='cancel-a-sell-order'>Cancel a sell order</h2><h2 id='issue-asset'>Issue asset</h2><h2 id='transfer-asset'>Transfer asset</h2><h2 id='send-multi-payment-2'>Send multi payment</h2><h1 id='arbitrary-transactions'>Arbitrary Transactions</h1>
 <p>Arbitrary transactions is a Qora feature that allows storage on the blockchain.<br>
 The data of the arbitrary transaction must be base58 encoded and must be between 1-4000 bytes.</p>
 
 <aside class="notice">
 Currently arbitrary transactions can only be made through the API.
 </aside>
-
-<h2 id="send-arbitrary-transaction">Send arbitrary transaction</h2>
-
+<h2 id='send-arbitrary-transaction'>Send arbitrary transaction</h2>
 <p>To create an arbitrary transaction, open the console and then send your Command.</p>
 
 <p>Below you will see an example command.</p>
 
 <blockquote>
-<p>POST arbitrarytransacions {&ldquo;creator&rdquo;: &ldquo;QNbA69dbnmwqJHLQeS9v63hSLZXXGkmtC6&rdquo;,
-&ldquo;data&rdquo;:&ldquo;4GFHMAo9fmbUq7usopgntwUfAiLtpL98K6QCosAJsqQmY95tfd5KoUaKu34v6Qwp7RtYEhobCx7LVi7aYbbtpzfA&rdquo;,&ldquo;service&rdquo;: 555,&ldquo;fee&rdquo;: &ldquo;1.00001&rdquo;}</p>
+<p>POST arbitrarytransacions {&quot;creator&quot;: &quot;QNbA69dbnmwqJHLQeS9v63hSLZXXGkmtC6&quot;,
+&quot;data&quot;:&quot;4GFHMAo9fmbUq7usopgntwUfAiLtpL98K6QCosAJsqQmY95tfd5KoUaKu34v6Qwp7RtYEhobCx7LVi7aYbbtpzfA&quot;,&quot;service&quot;: 555,&quot;fee&quot;: &quot;1.00001&quot;}</p>
 </blockquote>
 
 <p>Returns the transaction in JSON when successful.</p>
 
 <p>If you have encountered an error while making the arbitrary transaction, console will display the error code.
 Below is the errors list.</p>
-
-<h3 id="errors">ERRORS</h3>
-
+<h3 id='errors-3'>ERRORS</h3>
 <table><thead>
 <tr>
 <th>Error</th>
@@ -389,70 +791,54 @@ Below is the errors list.</p>
 <td>Wallet is locked.</td>
 </tr>
 </tbody></table>
-
-<h2 id="load-arbitrary-transaction">Load arbitrary transaction</h2>
-
+<h2 id='load-arbitrary-transaction'>Load arbitrary transaction</h2>
 <p>To load an arbitrary transaction, open the console and then send your Command.</p>
 
 <p>Below you will see an example command.</p>
 
 <blockquote>
-<p>POST transactions/scan {&ldquo;type&rdquo;:10,&ldquo;creator&rdquo;:&ldquo;QNbA69dbnmwqJHLQeS9v63hSLZXXGkmtC6&rdquo;}  </p>
+<p>POST transactions/scan {&quot;type&quot;:10,&quot;creator&quot;:&quot;QNbA69dbnmwqJHLQeS9v63hSLZXXGkmtC6&quot;}  </p>
 </blockquote>
 
 <p>Returns all the arbitrary transactions made by the given creator.  </p>
-
-<h1 id="automated-transactions">Automated Transactions</h1>
-
-<h2 id="deploy-at">Deploy AT</h2>
-
+<h1 id='automated-transactions'>Automated Transactions</h1><h2 id='deploy-at'>Deploy AT</h2>
 <p>To deploy an AT (smart contract) go to the AT tab and click Deploy AT.</p>
 
 <p>Enter the values accordingly on each field and click deploy.</p>
+<h1 id='atomic-cross-chain-transfers'>Atomic Cross-Chain Transfers</h1><h2 id='initiate-acct'>Initiate ACCT</h2><h2 id='response-acct'>Response ACCT</h2><h1 id='qora-web'>Qora Web</h1><h2 id='web-server'>Web Server</h2>
+<p>The built-in web server can be accessed by either:</p>
 
-<h1 id="atomic-cross-chain-transfers">Atomic Cross-Chain Transfers</h1>
+<ul>
+<li>right-clicking on the Qora icon in your system tray and selecting &quot;Qora Web/Social Network&quot;</li>
+<li>from the &quot;File&quot; menu in your Qora client GUI select &quot;Decentralized web server&quot; (also via Alt-W)</li>
+</ul>
+<h2 id='browse-the-web'>Browse the web</h2>
+<p>You can view blockchain-stored websites by going to the <a href="http://127.0.0.1:9090/index/webdirectory.html">web directory</a>.</p>
+<h2 id='deploy-a-website'>Deploy a website</h2>
+<p>First of all, you&#39;ll need a registered name. If you don&#39;t have one already, please see <a href="#register-a-name">Registering a name</a>.
+To create/edit your name&#39;s website use the <a href="http://127.0.0.1:9090/index/namestorage.html">web-based name storage editor</a></p>
 
-<h2 id="initiate-acct">Initiate ACCT</h2>
+<ol>
+<li>First pick which name&#39;s website you want to create/edit from the drop-down list.</li>
+<li>Make sure the &quot;key&quot; field is left blank (or explicitly use the key &quot;website&quot;).</li>
+<li>Create/edit your website either using the &quot;data&quot; field and its built-in <em>Visual Editor</em> OR upload the data from a file on your computer using the &quot;BROWSE&quot; button. (This will overwrite the contents of the &quot;data&quot; field).</li>
+<li>Click &quot;Submit&quot; to submit your website to the Qora network for confirmation!</li>
+</ol>
 
-<h2 id="response-acct">Response ACCT</h2>
-
-<h1 id="qora-web">Qora Web</h1>
-
-<h2 id="web-server">Web Server</h2>
-
-<h2 id="browse-the-web">Browse the web</h2>
-
-<h2 id="deploy-a-website">Deploy a website</h2>
-
-<h1 id="tools">Tools</h1>
-
+<p>Note that the fee charged depends on how much data you store (i.e. the size of your website). Make sure you have enough balance!</p>
+<h1 id='tools'>Tools</h1>
 <p>Here you can find a list of tools</p>
-
-<h2 id="block-explorer">Block Explorer</h2>
-
-<p><a href="http://qora.co.in">Qora.co.in</a> is an online Qora block chain browser which displays the contents of individual blocks, transactions, transaction histories, balances of addresses, unconfirmed transactions, assets, polls and many statistics.It&rsquo;s written and operated by agran and it&rsquo;s the official Qora block explorer.</p>
-
-<h2 id="blogging-service">Blogging Service</h2>
-
-<p>Official blogging service of Qora has been created by agran and you can find it here : <a href="http://qora.co.in/?blog">http://qora.co.in/?blog</a><br>
-This service uses the arbitrary transactions feature of Qora to serve a socialized blogging suite.<br>
-To create a new blog post you have to generate the command by using the <a href="http://qora.co.in/?newpost">create post tool</a>.  </p>
-
-<h2 id="faucet">Faucet</h2>
-
-<h2 id="vanitygenqora">VanitygenQora</h2>
-
+<h2 id='block-explorer'>Block Explorer</h2>
+<p><a href="http://node.qora.tech:9090/index/blockexplorer.html">node.qora.tech</a> is an online Qora block chain browser which displays the contents of individual blocks, transactions, transaction histories, balances of addresses, unconfirmed transactions, assets, polls and many statistics.It&#39;s written and operated by agran and it&#39;s the official Qora block explorer.</p>
+<h2 id='blogging-service'>Blogging Service</h2>
+<p>Official blogging service of Qora has been created by <em>agran</em>.
+You can view the <a href="http://node.qora.tech:9090/index/blog.html">timeline of blog entries</a> or find individual blogs using the <a href="http://node.qora.tech:9090/index/blogdirectory.html">blog directory</a>.
+This service uses the arbitrary transactions feature of Qora to serve a socialized blogging suite.
+To create a new blog post click the new blog entry icon at the top of the <a href="http://node.qora.tech:9090/index/blog.html">blog timeline page</a>.</p>
+<h2 id='faucet'>Faucet</h2><h2 id='vanitygenqora'>VanitygenQora</h2>
 <p><strong>VanitygenQora</strong> is a command-line vanity Qora address generator created by agran.<br>
 You can find the latest version here : <a href="https://github.com/agran/VanitygenQora/releases">https://github.com/agran/VanitygenQora/releases</a></p>
-
-<h2 id="html-editor">HTML Editor</h2>
-
-<h2 id="multiple-pages-generator">Multiple Pages Generator</h2>
-
-<h1 id="help">Help</h1>
-
-<h2 id="how-to">How To</h2>
-
+<h2 id='html-editor'>HTML Editor</h2><h2 id='multiple-pages-generator'>Multiple Pages Generator</h2><h1 id='help'>Help</h1><h2 id='how-to'>How To</h2>
 <p>Here you can find a quick How-To list</p>
 
 <ul>
@@ -468,25 +854,13 @@ You can find the latest version here : <a href="https://github.com/agran/Vanityg
 <li><a href="#deploy-at">How to deploy an AT</a></li>
 <li><a href="#atomic-cross-chain-transfers">How to make an Atomic Cross-Chain transfer</a></li>
 </ul>
-
-<h2 id="known-issues">Known Issues</h2>
-
-<p>Below are listed the latest know bugs</p>
-
-<h2 id="find-help">Find help</h2>
-
-<h2 id="report-a-bug">Report a bug</h2>
-
-<p>Found a bug? You can report it to the official Github of Qora!</p>
-
-<h1 id="faq">FAQ</h1>
-
+<h2 id='known-issues'>Known Issues</h2>
+<p>Please visit <a href="https://github.com/Qoracoin/Qora/issues">Qora github issues page</a>.</p>
+<h2 id='find-help'>Find help</h2><h2 id='report-a-bug'>Report a bug</h2>
+<p>Found a bug? You can report it at the <a href="https://github.com/Qoracoin/Qora/issues">Qora github issues page</a>.</p>
+<h1 id='faq'>FAQ</h1>
 <p>Here are some frequently asked questions that might help you.</p>
-
-<h1 id="developers">Developers</h1>
-
-<h2 id="import-source-code-to-eclipse">Import source code to Eclipse</h2>
-
+<h1 id='developers'>Developers</h1><h2 id='import-source-code-to-eclipse'>Import source code to Eclipse</h2>
 <p>You can import the source code to a workspace in Eclipse by following the below steps.</p>
 
 <ul>
@@ -494,95 +868,91 @@ You can find the latest version here : <a href="https://github.com/agran/Vanityg
 <li><p>Create / Select a workspace</p></li>
 </ul>
 
-<p><img title="Create / Select a workspace" alt="Create / Select a workspace" src="https://i.imgur.com/cd8JxZb.png" /></p>
+<p><img src="https://i.imgur.com/cd8JxZb.png" title="Create / Select a workspace" alt="Create / Select a workspace" /></p>
 
 <ul>
 <li>File / Import</li>
 </ul>
 
-<p><img title="File / Import" alt="File / Import" src="https://i.imgur.com/Yucm94S.png" /></p>
+<p><img src="https://i.imgur.com/Yucm94S.png" title="File / Import" alt="File / Import" /></p>
 
 <ul>
 <li>/ Git / Projects from Git</li>
 </ul>
 
-<p><img title="/ Git / Projects from Git " alt="/ Git / Projects from Git " src="https://i.imgur.com/NJd9b4x.png" /></p>
+<p><img src="https://i.imgur.com/NJd9b4x.png" title="/ Git / Projects from Git " alt="/ Git / Projects from Git " /></p>
 
 <ul>
 <li>/ Clone URI</li>
 </ul>
 
-<p><img title="Clone URI" alt="/ Clone URI" src="https://i.imgur.com/2LJBSe2.png" /></p>
+<p><img src="https://i.imgur.com/2LJBSe2.png" title="Clone URI" alt="/ Clone URI" /></p>
 
 <ul>
 <li>/ Enter Github Repo</li>
 </ul>
 
-<p><img title="/ Enter Github Repo" alt="/ Enter Github Repo" src="https://i.imgur.com/7CLLk1A.png" /></p>
+<p><img src="https://i.imgur.com/7CLLk1A.png" title="/ Enter Github Repo" alt="/ Enter Github Repo" /></p>
 
 <ul>
 <li>/ Select Master Branch</li>
 </ul>
 
-<p><img title="/ Select Master Branch" alt="/ Select Master Branch" src="https://i.imgur.com/ixSurJo.png" /></p>
+<p><img src="https://i.imgur.com/ixSurJo.png" title="/ Select Master Branch" alt="/ Select Master Branch" /></p>
 
 <ul>
 <li>/ Select Destination</li>
 </ul>
 
-<p><img title="/ Select Destination" alt="/ Select Destination" src="https://i.imgur.com/2Kp7NiC.png" /></p>
+<p><img src="https://i.imgur.com/2Kp7NiC.png" title="/ Select Destination" alt="/ Select Destination" /></p>
 
 <ul>
 <li>/ Import Existing Projects</li>
 </ul>
 
-<p><img title="/ Import Existing Projects" alt="/ Import Existing Projects" src="https://i.imgur.com/KC3LcJL.png" /></p>
+<p><img src="https://i.imgur.com/KC3LcJL.png" title="/ Import Existing Projects" alt="/ Import Existing Projects" /></p>
 
 <ul>
 <li>Click on <strong>Finish</strong></li>
 </ul>
 
-<p><img title="/ Finish" alt="/ Finish" src="https://i.imgur.com/BRmXqYz.png" /></p>
-
-<h2 id="start-the-wallet-from-the-eclipse&#39;s-workspace">Start the wallet from the Eclipse&rsquo;s workspace</h2>
-
-<p>When you have successfully imported Qora to your Eclipse&rsquo;s Workspace you then can start the wallet by following the below steps:</p>
+<p><img src="https://i.imgur.com/BRmXqYz.png" title="/ Finish" alt="/ Finish" /></p>
+<h2 id='start-the-wallet-from-the-eclipse-39-s-workspace'>Start the wallet from the Eclipse&#39;s workspace</h2>
+<p>When you have successfully imported Qora to your Eclipse&#39;s Workspace you then can start the wallet by following the below steps:</p>
 
 <ul>
 <li>Select the <strong>&gt;Qora [Qora master]</strong> from Package Explorer, click on Run on menu bar and then Run again.</li>
 </ul>
 
-<p><img title="Run" alt="Run" src="https://i.imgur.com/j38tm5s.png" /></p>
+<p><img src="https://i.imgur.com/j38tm5s.png" title="Run" alt="Run" /></p>
 
 <ul>
 <li>Run as Java Application</li>
 </ul>
 
-<p><img title="Run as Java Application" alt="Run as Java Application" src="https://i.imgur.com/4Sb9CDZ.png" /></p>
+<p><img src="https://i.imgur.com/4Sb9CDZ.png" title="Run as Java Application" alt="Run as Java Application" /></p>
 
 <ul>
 <li>On the next step scroll down and click on the Start - (default package) and click OK</li>
 </ul>
 
-<p><img title="Start" alt="Start" src="https://i.imgur.com/jUh89lu.png" /></p>
+<p><img src="https://i.imgur.com/jUh89lu.png" title="Start" alt="Start" /></p>
 
 <aside class="success">
 You have launched the wallet directly from source
 </aside>
-
-<h2 id="compile-qora-from-source-code">Compile Qora from source code</h2>
-
+<h2 id='compile-qora-from-source-code'>Compile Qora from source code</h2>
 <ul>
 <li>Select the <strong>&gt;Qora [Qora master]</strong> from Package Explorer</li>
 </ul>
 
-<p><img title="Master" alt="Master" src="http://i.imgur.com/H8tK1rZ.jpg" /></p>
+<p><img src="http://i.imgur.com/H8tK1rZ.jpg" title="Master" alt="Master" /></p>
 
 <ul>
 <li>Go to <strong>/ File / Export / Java / Runnable JAR file</strong></li>
 </ul>
 
-<p><img title="Export" alt="Export" src="https://i.imgur.com/sIadzQn.png" /></p>
+<p><img src="https://i.imgur.com/sIadzQn.png" title="Export" alt="Export" /></p>
 
 <ul>
 <li><p>Export</p>
@@ -595,21 +965,19 @@ You will have to <a href="#start-the-wallet-from-the-eclipse's-workspace">run th
 </ul></li>
 </ul>
 
-<p><img title="Export" alt="Export" src="https://i.imgur.com/BXvovZj.png" />  </p>
+<p><img src="https://i.imgur.com/BXvovZj.png" title="Export" alt="Export" />  </p>
 
 <aside class="success">
 You have now compiled the Qora.jar file directly from source code.
 </aside>  
-
-<h2 id="api">API</h2>
-
+<h2 id='api'>API</h2>
 <p>Qora uses a REST API to communicate with the wallet.
 You can find the entire API documentation here : <a href="http://api.qora.org">http://api.qora.org</a></p>
-
-<h2 id="submit-a-pull-request">Submit a pull request</h2>
-
+<h2 id='submit-a-pull-request'>Submit a pull request</h2>
 <p>You can submit a pull request to the source code by following the below steps.</p>
 
+      </div>
+      <div class="dark-box">
       </div>
     </div>
   </body>

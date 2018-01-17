@@ -6,13 +6,10 @@
 
 /*
 Copyright 2008-2013 Concur Technologies, Inc.
-
 Licensed under the Apache License, Version 2.0 (the "License"); you may
 not use this file except in compliance with the License. You may obtain
 a copy of the License at
-
   http://www.apache.org/licenses/LICENSE-2.0
-
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
 WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
@@ -61,6 +58,7 @@ html, body {
   background-color: $nav-bg;
   font-size: 13px;
   font-weight: bold;
+  border-right: 1px solid #ccc;
 
   // language selector for mobile devices
   .lang-selector {
@@ -83,7 +81,7 @@ html, body {
     input {
       background: $nav-bg;
       border-width: 0 0 1px 0;
-      border-color: $search-box-border-color;
+      //border-color: $search-box-border-color;
       padding: 6px 0 6px 20px;
       box-sizing: border-box;
       margin: $nav-v-padding $nav-padding;
@@ -180,7 +178,6 @@ html, body {
   .toc-footer {
     padding: 1em 0;
     margin-top: 1em;
-    border-top: 1px dashed $nav-footer-border-color;
 
     li,a {
       color: $nav-text;
@@ -419,6 +416,7 @@ html, body {
 
     td {
       padding: 10px;
+      border: 1px solid #ccc;
     }
 
     tr:last-child {
@@ -521,8 +519,8 @@ html, body {
     margin: 0;
     width: $examples-width;
 
-    float:right;
-    clear:right;
+    float:left;
+    clear:left;
 
     box-sizing: border-box;
 

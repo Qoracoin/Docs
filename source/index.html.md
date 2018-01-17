@@ -9,19 +9,17 @@ toc_footers:
 search: true
 ---
 
-# Introduction
-
-
 # About Qora
 
-
-## Features
+Qora is a community-based cryptocurrency network. The emphasis is on community services like blogs, websites, etc. based on blockchain technology.
 
 ## Source Code
 
+Qora source code is hosted by [github](https://github.com/Qoracoin/Qora)
 
 ## External Resources
 
+Take a look at the [Qora website](http://qora.org)
 
 # Getting Started
 
@@ -32,53 +30,60 @@ search: true
 
 # Installation
 
-- [Universal Wallet](#universal-wallet)
 - [Windows Wallet](#windows-wallet)
-- [MAC Wallet](#mac-wallet)
-- [Linux Wallet](#linux-wallet)
-- [ARM Wallet](#arm-wallet)
+- [Universal Wallet](#universal-wallet)
+
+## Windows Wallet
+
+1. Download the latest Windows installer from github: [![release](https://img.shields.io/github/release/Qoracoin/Qora.svg)](https://github.com/Qoracoin/Qora/releases)
+
+2. Run the installer and follow the instructions.
+
+3. If installation is successful then you should have a Qora desktop icon and entries in your Windows menu.
 
 ## Universal Wallet
 
-1. Make sure you have the newest version of Java installed for you operating system, check your [java version here](https://www.java.com/en/download/installed.jsp.)
+1. Make sure you have at least Java v8 installed. [Check your Java version](https://www.java.com/en/download/installed.jsp) or [download Java](https://www.java.com/en/download/manual.jsp)
 
-2. Check the Qora block explorer for newest version [http://qora.co.in](http://qora.co.in), there is a link near the top of the page that will take you to the download page.
+2. Download the latest Qora Zipfile from github: [![release](https://img.shields.io/github/release/Qoracoin/Qora.svg)](https://github.com/Qoracoin/Qora/releases)
 
-3. Download the Qora\_vX.XX.X.zip file.  
+3. Once the file is downloaded, unzip it and it will make a Qora folder. You can move the Qora folder to wherever you like i.e. desktop, home directory etc.
 
-Latest version  
+4. Inside the Qora folder there will be a **run.sh** file you can double-click. Make sure you have the right permissions set to execute the file, right click on **run.sh**, choose "Properties" from the menu, go to the "Permissions" tab, in the "Execute" field make sure it reads "Only owner and group" and apply changes if needed.
 
-[![release](https://img.shields.io/github/release/Qoracoin/Qora.svg)](https://github.com/Qoracoin/Qora/releases)
-
-4. Once the file is downloaded, unzip it and it will make a Qora folder.You can move the Qora folder to wherever you like i.e. desktop, home directory etc.
-
-5. Inside the Qora folder there will be a **run.bat** and **run.sh** file
-
-      To run in Linux:
-
-Use the **run.sh** file for Linux. Make sure you have the right permissions set to execute the file, right click on **run.sh**, choose properties from the menu, go to the Permissions tab, in the Execute field make sure it reads Only owner and group, apply changes if needed.
-
-To run it you can click on run.sh and if a popup windows appears choose the execute option, or you can open a command prompt, change into the Qora folder and type :
+5. Alternatively you can open a command prompt or shell window, change directory to the Qora folder and type:
 
 `./run.sh`
-
-## Windows Wallet  
-
-## MAC Wallet
-
-## Linux Wallet
-
-## ARM Wallet
 
 # Settings
 
 ## Basic
 
+* GUI Enabled
+
+Most users will leave this enabled so they can access their wallets. Only people running a headless, high-availability node might consider disabling the GUI.
+
+* RPC Enabled
+* RPC port
+
+Enabling RPC allows your Qora client to process API calls via the specified port using HTTP. Some of the built-in web pages use API calls, e.g. block explorer, name storage, anything wallet-related. For these to work you need to have RPC enabled. To restrict API callers, take a look at [Access Permissions](#access-permission).
+
+* WEB Enabled
+* WEB port
+
+Enabling WEB allows you to access the Qora network/blockchain/features using your web browser, which might be easier and more feature-rich than the Qora client's GUI. To restrict access, take a look at [Access Permissions](#access-permission).
+
 ## Known Peers
+
+This is a list of peer IP addresses known to your Qora client, along with a tick-box to show if you're connected to them. You can add new peer IP addresses using the input box below then clicking "Add". To remove an address, right-click on the address and select "Delete address".
 
 ## Access Permission
 
-## Settings.json
+These are two lists of IP addresses that can connect to the RPC and WEB ports of your Qora client (if enabled). You can add IP addresses using the input box below then clicking "Add". To remove an address, right-click on the address and select "Delete address".
+
+## settings.json
+
+When you click "Apply" your settings.json file will be rewritten to reflect the new settings.
 
 # Wallet
 
@@ -206,7 +211,24 @@ You can also made the above API request by simply visiting the below URL while R
 
 ## Register a name
 
+1. Using your Qora client, first click on the "Naming Service" tab.
+2. Next click on "Register" button. This should open a new window.
+3. Select the Qora account that should own, and pay for, your new name from the drop-down list.
+4. Type in your chosen name in the "Name" box. As you type the "Name Details" box below will inform you if your name has already been taken or not.
+5. For first time use, you can ignore the "Key" and "Value" fields - or delete the "defaultkey" that is made for you using the "Remove" button.
+6. Click the "Register" button and your name registration request transaction will be submitted to the Qora network for confirmation.
+
+You will know when your new name is ready to use when the "Confirmed" tick-box is ticked.
+
 ## Update name
+
+1. Using your Qora client, first click on the "Naming Service" tab.
+2. Right-click on a name and select "Update" from the pop-up menu. This should open a new window.
+3. In this new window you can change the owner (make sure you get the address correct) or add/remove key-value pairs associated with the name using the "Add" and "Remove" buttons.
+  - To add a key-value pair, enter the key and value in the respective input boxes then click "Add"
+  - To remove a key-value pair, single-click the pair in the list to highlight it then click "Remove"
+
+Note that altering the data storage associated with a name is done via [the web-based name storage editor](http://127.0.0.1:9090/index/namestorage.html)
 
 ## Transfer name
 
@@ -319,11 +341,28 @@ Enter the values accordingly on each field and click deploy.
 
 # Qora Web
 
-## Web Server  
+## Web Server
+
+The built-in web server can be accessed by either:
+
+- right-clicking on the Qora icon in your system tray and selecting "Qora Web/Social Network"
+- from the "File" menu in your Qora client GUI select "Decentralized web server" (also via Alt-W)
 
 ## Browse the web
 
+You can view blockchain-stored websites by going to the [web directory](http://127.0.0.1:9090/index/webdirectory.html).
+
 ## Deploy a website
+
+First of all, you'll need a registered name. If you don't have one already, please see [Registering a name](#register-a-name).
+To create/edit your name's website use the [web-based name storage editor](http://127.0.0.1:9090/index/namestorage.html)
+
+1. First pick which name's website you want to create/edit from the drop-down list.
+2. Make sure the "key" field is left blank (or explicitly use the key "website").
+3. Create/edit your website either using the "data" field and its built-in *Visual Editor* OR upload the data from a file on your computer using the "BROWSE" button. (This will overwrite the contents of the "data" field).
+4. Click "Submit" to submit your website to the Qora network for confirmation!
+
+Note that the fee charged depends on how much data you store (i.e. the size of your website). Make sure you have enough balance!
 
 # Tools
 
@@ -331,13 +370,14 @@ Here you can find a list of tools
 
 ## Block Explorer
 
-[Qora.co.in](http://qora.co.in) is an online Qora block chain browser which displays the contents of individual blocks, transactions, transaction histories, balances of addresses, unconfirmed transactions, assets, polls and many statistics.It's written and operated by agran and it's the official Qora block explorer.
+[node.qora.tech](http://node.qora.tech:9090/index/blockexplorer.html) is an online Qora block chain browser which displays the contents of individual blocks, transactions, transaction histories, balances of addresses, unconfirmed transactions, assets, polls and many statistics.It's written and operated by agran and it's the official Qora block explorer.
 
 ## Blogging Service
 
-Official blogging service of Qora has been created by agran and you can find it here : [http://qora.co.in/?blog](http://qora.co.in/?blog)  
-This service uses the arbitrary transactions feature of Qora to serve a socialized blogging suite.  
-To create a new blog post you have to generate the command by using the [create post tool](http://qora.co.in/?newpost).  
+Official blogging service of Qora has been created by _agran_.
+You can view the [timeline of blog entries](http://node.qora.tech:9090/index/blog.html) or find individual blogs using the [blog directory](http://node.qora.tech:9090/index/blogdirectory.html).
+This service uses the arbitrary transactions feature of Qora to serve a socialized blogging suite.
+To create a new blog post click the new blog entry icon at the top of the [blog timeline page](http://node.qora.tech:9090/index/blog.html).
 
 ## Faucet
 
@@ -371,13 +411,13 @@ Here you can find a quick How-To list
 
 ## Known Issues  
 
-Below are listed the latest know bugs
+Please visit [Qora github issues page](https://github.com/Qoracoin/Qora/issues).
 
 ## Find help
 
 ## Report a bug  
 
-Found a bug? You can report it to the official Github of Qora!
+Found a bug? You can report it at the [Qora github issues page](https://github.com/Qoracoin/Qora/issues).
 
 # FAQ  
 
